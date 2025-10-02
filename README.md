@@ -69,4 +69,20 @@ docker run --rm -it -p 8111:8111 jetbrains/teamcity-server
 
 ```bash
 kubectl create deployment my-app --image=my-app-image
+
+kubectl get pods
+kubectl get services
+```
+
+##### Scaling and Monitoring a Deployment
+
+```bash
+
+kubectl apply -f 01_first_manifest.yml
+kubectl scale deployment nginx-deployment --replicas 10
+kubectl get pods
+
+kubectl scale deployment nginx-deployment --replicas 3
+kubectl get pods
+
 ```

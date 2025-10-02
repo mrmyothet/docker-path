@@ -64,3 +64,9 @@ docker container run --rm -it -p 8080:8080 jenkins/jenkins
 
 docker run --rm -it -p 8111:8111 jetbrains/teamcity-server
 ```
+
+### Intro to Kubernetes
+
+```bash
+kubectl create deployment my-app --image=my-app-image
+```

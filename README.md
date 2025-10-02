@@ -86,3 +86,10 @@ kubectl scale deployment nginx-deployment --replicas 3
 kubectl get pods
 
 ```
+
+##### Scaling a stateful application
+
+```bash
+kubectl scale statefulset datacamp-statefulset --replicas 10
+kubectl get pods
+```

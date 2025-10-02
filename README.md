@@ -90,6 +90,10 @@ kubectl get pods
 ##### Scaling a stateful application
 
 ```bash
+kubectl apply -f 01_statefulset.yml
 kubectl scale statefulset datacamp-statefulset --replicas 10
+kubectl get pods
+
+kubectl scale statefulset datacamp-statefulset --replicas 5
 kubectl get pods
 ```

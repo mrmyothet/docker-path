@@ -106,3 +106,15 @@ kubectl get pv
 
 kubectl describe pvc | grep "Used By" -B 3 -A 2
 ```
+
+##### StatefulSet With Attached Storage
+
+```bash
+kubectl apply -f 01_namespace.yml
+kubectl apply -f 02_statefulset.yml
+
+kubectl get pvc -n datacamp
+
+kubectl scale statefulset -n datacamp --replicas 10
+kubectl get pvc -n datacamp
+```

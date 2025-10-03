@@ -97,3 +97,12 @@ kubectl get pods
 kubectl scale statefulset datacamp-statefulset --replicas 5
 kubectl get pods
 ```
+
+##### Monitoring Pods and Storage
+
+```bash
+kubectl apply -f 01_pods.yml -f 02_pvc.yml
+kubectl get pv
+
+kubectl describe pvc | grep "Used By" -B 3 -A 2
+```

@@ -131,3 +131,11 @@ kubectl scale deployment datacamp-deployment --replicas 5
 kubectl describe service datacamp-service
 
 ```
+
+##### Deploy an ETL pipeline on Kubernetes
+
+```bash
+kubectl logs pod-load
+
+kubectl logs pod-list-files
+```

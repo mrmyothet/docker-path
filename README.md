@@ -118,3 +118,16 @@ kubectl get pvc -n datacamp
 kubectl scale statefulset -n datacamp --replicas 10
 kubectl get pvc -n datacamp
 ```
+
+##### Deploy a Service
+
+```bash
+cat *.yml
+
+kubectl apply -f 01_deployment.yml -f 02_service.yml
+kubectl describe service datacamp-service
+
+kubectl scale deployment datacamp-deployment --replicas 5
+kubectl describe service datacamp-service
+
+```
